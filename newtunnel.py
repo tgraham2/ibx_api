@@ -1,3 +1,18 @@
+#!/usr/env python
+# requires cssh_lib
+"""
+ store encrypted password with:
+   cd /<pwd>/bin
+   python   
+   from cssh_lib import qp
+   qp()
+   username:<uid>
+   password:<pwd>
+   again:<pwd>
+ 
+ if you don't do the above, this code will say don't know you
+"""
+#
 def newtunnel (username,sitename):
     from ibx_lib import Infoblox
     from netaddr import IPAddress
